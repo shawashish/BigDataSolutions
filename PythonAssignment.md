@@ -165,23 +165,46 @@ my_list.insert(2,"Big")
 print(my_list)
 
 Q40. What is a tuple? How is it different from list?
-
+A40. Tuples are used to store multiple items in a single variable. Tuple is one of 4 built-in data types in Python used to store collections of data. Tuples are immutable while lists are mutable.
 
 Q41. How can you create a tuple in Python?
+A41. my_tuple = (1,2,3,5,7)
 
 Q42. Create a tuple and try to add your name in the tuple. Are you able to do it? Support your answer with reason.
+A42. 
+my_tuple = (1,2,3,5,7)
+My name cannot be added to the above tuple as tuples are immutable.
 
 Q43. Can two tuple be appended. If yes, write a code for it. If not, why?
+A43. Two tuples cannot be appended since tuples are immutable.
 
 Q44. Take a tuple as an input and print the count of elements in it.
+A44.
+# Count number of entries in tuple
+result = tuple(map(int,input("Enter values for a tuple").split()))
+print(len(result))
 
 Q45. What are sets in Python?
 
 Q46. How can you create a set?
 
 Q47. Create a set and add "iNeuron" in your set.
+A47.
+# Set problem
+my_set = {2,4,7,'Ashish'}
+my_set.add('iNeuron')
+print(my_set)
 
 Q48. Try to add multiple values using add() function.
+A48.
+# Set problem to add multiple values using add function
+my_set = {2,4,7,'Ashish'}
+print('My initial set is :', my_set)
+new_set = {4,8,9,'Shaw'}
+for item in new_set:
+    my_set.add(item)
+print('My New set is : ',my_set)
+
 
 Q49. How is update() different from add()?
 
