@@ -267,14 +267,62 @@ Q75. How can you loop over a dictionary?
 
 ### Coding problems
 Q76. Write a Python program to find the factorial of a given number.
+A76.
+# Find factorial of a given number
+
+my_num = int(input('Enter a number: '))
+result = 1
+while my_num != 0:
+    result = result * my_num
+    my_num = my_num - 1
+
+print(result)
 
 Q77. Write a Python program to calculate the simple interest. Formula to calculate simple interest is SI = (P*R*T)/100
+A77.
+# Calculate S.I
+p,r,t = map(int, (input('Enter the values of Principal, Interest and Time period').split()))
+result = (p*r*t)/100
+print('Simple Interest is : ', result)
 
 Q78. Write a Python program to calculate the compound interest. Formula of compound interest is A = P(1+ R/100)^t.
+A78.
+# Calculate C.I
+p,r,t = map(int, (input('Enter the values of Principal, Interest and Time period').split()))
+result = p*((1 + r/100)**t)
+print('Compound Interest is : ', result)
 
 Q79. Write a Python program to check if a number is prime or not.
+A79.
+# Prime Number Check
+my_number = int(input('Enter a number: '))
+not_prime = False
+for num in range(2,10):
+    if my_number % num == 0 and my_number !=num:
+        not_prime = True
+        break
+    else:
+        continue
+if not not_prime and my_number > 1:
+    print(f'The number {my_number} is a Prime number')
+else:
+    print(f'The number {my_number} is not a Prime number')
 
 Q80. Write a Python program to check Armstrong Number.
+A80.
+# Armstrong Number
+
+my_number = input('Enter a number: ')
+my_list = list(my_number)
+num_len = len(my_list)
+result = 0
+for item in my_list:
+    result = (int(item) ** num_len) + result
+
+if result == int(my_number):
+    print(f'The number {my_number} is an Armstrong number')
+else:
+    print(f'The number {my_number} is not an Armstrong number')
 
 Q81. Write a Python program to find the n-th Fibonacci Number.
 
