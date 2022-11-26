@@ -95,6 +95,10 @@ Q28. Write a code to get the desired output of the following
 string = "Big Data iNeuron"
 desired_output = "iNeuron"
 ```
+A28.
+# String Index problem
+string = "Big Data iNeuron"
+print(string[9:])
 
 Q29. Write a code to get the desired output of the following
 ```
