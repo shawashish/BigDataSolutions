@@ -115,33 +115,57 @@ string = "Big Data iNeuron"
 print(string[::-1])
 
 Q31. How can you delete entire string at once?
+A31. You can delete the entire string using replace method with the new string as space ('').
 
 Q32. What is escape sequence?
+A32. An escape sequence is a sequence of characters that, when used inside a character or string, does not represent itself but is converted into another character or series of characters.
 
 Q33. How can you print the below string?
 ```
 'iNeuron's Big Data Course'
 ```
+A33.
+print("iNeuron's Big Data Course")
 
 Q34. What is a list in Python?
+A34.
+Lists are used to store multiple items in a single variable. Lists are one of 4 built-in data types in Python used to store collections of data, the other 3 are Tuple, Set, and Dictionary, all with different qualities and usage.
 
 Q35. How can you create a list in Python?
+A35.
+my_list = [1,2,6,8,9]
 
 Q36. How can we access the elements in a list?
+A36.
+List elements can be accessed using indexes.
+my_list[0] would be able to access the first element of the list.
 
 Q37. Write a code to access the word "iNeuron" from the given list.
 ```
 lst = [1,2,3,"Hi",[45,54, "iNeuron"], "Big Data"]
 ``` 
+A37.
+my_list = [1,2,3,"Hi",[45,54, "iNeuron"], "Big Data"]
+print(my_list[4][2])
 
 Q38. Take a list as an input from the user and find the length of the list.
+A38.
+# Find Lenth of the list
+my_list = [1,2,6,8,9]
+print(len(my_list))
 
 Q39. Add the word "Big" in the 3rd index of the given list.
 ```
 lst = ["Welcome", "to", "Data", "course"]
 ```
+A39.
+# Add elements to the list
+my_list = ["Welcome", "to", "Data", "course"]
+my_list.insert(2,"Big")
+print(my_list)
 
 Q40. What is a tuple? How is it different from list?
+
 
 Q41. How can you create a tuple in Python?
 
