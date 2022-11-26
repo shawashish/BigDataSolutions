@@ -105,8 +105,14 @@ Q29. Write a code to get the desired output of the following
 string = "Big Data iNeuron"
 desired_output = "norueNi"
 ```
+A29.
+string = "Big Data iNeuron"
+print(string[-1:-8:-1])
 
 Q30. Resverse the string given in the above question.
+A30.
+string = "Big Data iNeuron"
+print(string[::-1])
 
 Q31. How can you delete entire string at once?
 
