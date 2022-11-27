@@ -383,14 +383,55 @@ def check_largest(my_list,num):
 print(check_largest(my_list,position-1))
 
 Q85. Write a Python program to find cumulative sum of a list.
+A85.
+# Cumulative sum of a list
+
+my_list = [12,109,97,84,24,5,52]
+print('The sum of the list is: ',sum(my_list))
 
 Q86. Write a Python program to check if a string is palindrome or not.
+A86.
+# Palindrome string
+my_string = input('Enter a string: ').upper()
+if my_string == my_string[::-1]:
+    print(f'{my_string} is a Palindrome')
+else:
+    print(f'{my_string} is not a Palindrome')
 
 Q87. Write a Python program to remove i'th element from a string.
+A87.
+# Remove ith element from a string
+
+my_string,position = input('Enter a string and the position element to be removed').split()
+my_list = []
+my_list = list(my_string)
+my_list.pop(int(position)-1)
+result = ''.join(my_list)
+print(result)
 
 Q88. Write a Python program to check if a substring is present in a given string.
+A88.
+# Check substring is present in a given string
+
+main_string, sub_string = input('Enter the main string and the substring ').split()
+if sub_string in main_string:
+    print('Sub string is inside Main string')
+else:
+    print('Try again please')
 
 Q89. Write a Python program to find words which are greater than given length k.
+A89.
+# Find words greater than a specified length
+
+my_list =['Jyoti','Ashish','Abhishek', 'Julie','Palindrome','Armstrong', 'Cruciferous']
+result = []
+def find_word(my_list,word_length):
+    for item in my_list:
+        if len(item) > word_length:
+            result.append(item)
+    return result
+
+print(find_word(my_list, 9))
 
 Q90. Write a Python program to extract unquire dictionary values.
 
