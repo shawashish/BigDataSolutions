@@ -365,6 +365,22 @@ def swap_list(my_list,pos1,pos2):
 print(swap_list(my_list, pos1-1, pos2-1))
 
 Q84. Write a Python program to find N largest element from a list.
+A84.
+# Find nth largest element in a list
+
+my_list = [12,76,54,78,96,34,55,44,77,9]
+position = int(input('Enter the position'))
+def check_largest(my_list,num):
+    max = 0
+    my_list.sort()
+    for item in my_list:
+        if item >= max:
+            max = item
+            if my_list.index(item) == num:
+                return item
+            else:
+                continue
+print(check_largest(my_list,position-1))
 
 Q85. Write a Python program to find cumulative sum of a list.
 
