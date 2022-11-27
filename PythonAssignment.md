@@ -570,6 +570,14 @@ Q99. Write a python program to print below pattern.
 1 2 3 4 
 1 2 3 4 5
 ```
+A99.
+# Number Pattern 
+
+for i in range(1,6):
+    for j in range(1,i+1):
+        print(j, end=' ')
+    print('')
+
 
 Q100. Write a python program to print below pattern.
 ```
@@ -579,3 +587,12 @@ C C C
 D D D D 
 E E E E E 
 ```
+A100.
+# Alphabet pattern
+
+my_list = ['A','B ','C ','D ','E ']
+
+counter = 1
+for val in my_list:
+    print(val * counter + ' ')
+    counter+=1
