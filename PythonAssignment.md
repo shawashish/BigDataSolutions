@@ -434,32 +434,80 @@ def find_word(my_list,word_length):
 print(find_word(my_list, 9))
 
 Q90. Write a Python program to extract unquire dictionary values.
+A90.
+# Extract unique dictionary values
+
+my_dict = {1:'Rahul',2:'Nikita',3:'Suresh',4:'Yash',5:'Rahul',6:'Nikita',7:'Raj',8:'Jyoti',9:'Ashish'}
+my_set = set(my_dict.values())
+print(my_set)
 
 Q91. Write a Python program to merge two dictionary.
+A91.
+# Merge two dictionaries
+
+my_dict1 = {1:'Rahul',2:'Nikita',3:'Suresh',4:'Yash',5:'Ashish'}
+my_dict2 = {6:'Navin',7:'Swastik',8:'Jyoti',9:'Julie'}
+
+result = my_dict1.copy()
+result.update(my_dict2)
+print(result)
 
 Q92. Write a Python program to convert a list of tuples into dictionary.
 ```
 Input : [('Sachin', 10), ('MSD', 7), ('Kohli', 18), ('Rohit', 45)]
 Output : {'Sachin': 10, 'MSD': 7, 'Kohli': 18, 'Rohit': 45}
 ```
+A92.
+# Convert tuple into dictionary
+
+my_list = [('Sachin', 10), ('MSD', 7), ('Kohli', 18), ('Rohit', 45)]
+print(dict(my_list))
 
 Q93. Write a Python program to create a list of tuples from given list having number and its cube in each tuple.
 ```
 Input: list = [9, 5, 6]
 Output: [(9, 729), (5, 125), (6, 216)]
 ```
+A93.
+# Convert list into tuple
+
+my_list = [9, 5, 6]
+result = [(val,pow(val,3)) for val in my_list]
+print(result)
+
 
 Q94. Write a Python program to get all combinations of 2 tuples.
 ```
 Input : test_tuple1 = (7, 2), test_tuple2 = (7, 8)
 Output : [(7, 7), (7, 8), (2, 7), (2, 8), (7, 7), (7, 2), (8, 7), (8, 2)]
 ```
+A94.
+# Join two tuples
+
+test_tuple1 = (7, 2)
+test_tuple2 = (7, 8)
+my_list = []
+for item in test_tuple1:
+    for value in test_tuple2:
+        result = (item,value)
+        my_list.append(result)
+for item in test_tuple2:
+    for value in test_tuple1:
+        result = (item,value)
+        my_list.append(result)
+print(my_list)
 
 Q95. Write a Python program to sort a list of tuples by second item.
 ```
 Input : [('for', 24), ('Geeks', 8), ('Geeks', 30)] 
 Output : [('Geeks', 8), ('for', 24), ('Geeks', 30)]
 ```
+A95.
+# Sort a list of tuples by 2nd item
+
+my_list = [('for', 24), ('Geeks', 8), ('Geeks', 30)] 
+my_list.sort(key=lambda x:x[1])
+print(my_list)
 
 Q96. Write a python program to print below pattern.
 ```
@@ -469,6 +517,13 @@ Q96. Write a python program to print below pattern.
 * * * * 
 * * * * * 
 ```
+A96.
+# Pattern print 
+
+my_constant = '* '
+for val in range(1,6):
+    print(my_constant * val)
+
 Q97. Write a python program to print below pattern.
 ```
     *
@@ -477,6 +532,15 @@ Q97. Write a python program to print below pattern.
  ****
 *****
 ```
+A97.
+# Pattern print 
+
+my_constant = '*'
+my_space = ' '
+counter = 1
+for val in range(5,0,-1):
+    print((my_space * val) + (my_constant*counter))
+    counter+=1
 
 Q98. Write a python program to print below pattern.
 ```
@@ -486,6 +550,17 @@ Q98. Write a python program to print below pattern.
  * * * * 
 * * * * * 
 ```
+A98.
+# # Pattern print 
+
+my_constant = ' *'
+my_space = ' '
+counter = 0
+for val in range(5,0,-1):
+     result = (my_constant + (my_constant*counter))
+     print((my_space * val + result))
+     counter+=1
+
 
 Q99. Write a python program to print below pattern.
 ```
