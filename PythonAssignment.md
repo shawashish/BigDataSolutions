@@ -325,10 +325,44 @@ else:
     print(f'The number {my_number} is not an Armstrong number')
 
 Q81. Write a Python program to find the n-th Fibonacci Number.
+A81.
+# Print nth Fibonacci number
+
+def fibo(num):
+    if num<=0:
+        print('Incorrect number')
+    elif num == 1:
+        return 0
+    elif num ==2:
+        return 1
+    else:
+        return fibo(num-1) + fibo(num-2)
+
+print(fibo(5))
 
 Q82. Write a Python program to interchange the first and last element in a list.
+A82.
+# Interchange first and last element of a list
+
+my_list = [1,5,6,8,9,12]
+last = my_list.pop()
+first = my_list.pop(0)
+my_list.insert(0, last)
+my_list.append(first)
+print(my_list)
 
 Q83. Write a Python program to swap two elements in a list.
+A83.
+# Swap two elements in a list
+my_list = [1,3,4,56,7,8]
+pos1 = 3
+pos2 = 4
+
+def swap_list(my_list,pos1,pos2):
+    my_list[pos1],my_list[pos2] =my_list[pos2],my_list[pos1]
+    return my_list
+
+print(swap_list(my_list, pos1-1, pos2-1))
 
 Q84. Write a Python program to find N largest element from a list.
 
