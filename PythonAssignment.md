@@ -130,8 +130,10 @@ print(my_list)
 ```
 
 Q26. What is a string? How can we declare string in Python?
+A26. String is one of the data types in python which can store variables. String can be declared using single quotes or double quotes.
 
 Q27. How can we access the string using its index?
+A27. String can be accessed using [] by providing the index number in the brackets.
 
 Q28. Write a code to get the desired output of the following
 ```
