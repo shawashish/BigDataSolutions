@@ -255,22 +255,38 @@ print('My New set is : ',my_set)
 
 
 Q49. How is update() different from add()?
+A49. We use add() method to add single value to a set. We use update() method to add sequence values to a set.
 
 Q50. What is clear() in sets?
+A50. Python Set clear() method removes all elements from the set.
 
 Q51. What is frozen set?
+A51. Frozen set is just an immutable version of a Python set object. While elements of a set can be modified at any time, elements of the frozen set remain the same after creation. 
 
 Q52. How is frozen set different from set?
+A52. Frozen set is immutable whereas normal set can be changed.
 
 Q53. What is union() in sets? Explain via code.
+A53.
+my_set1 = {1,2,3}
+my_set2 = {2,5,6}
+print(my_set1.union(my_set2))
 
 Q54. What is intersection() in sets? Explain via code.
+A54.
+my_set1 = {1,2,3}
+my_set2 = {2,5,6}
+print(my_set1.intersection(my_set2))
 
 Q55. What is dictionary ibn Python?
+A55. Dictionaries are used to store data values in key:value pairs. A dictionary is a collection which is ordered, changeable and do not allow duplicates.
 
 Q56. How is dictionary different from all other data structures.
+A56. In dictionary data is stored in the form of key value pairs unlike other data structures.
 
 Q57. How can we delare a dictionary in Python?
+A57. 
+my_dict = {1:'Rahul',2:'Nikita',3:'Suresh',4:'Yash',5:'Rahul',6:'Nikita',7:'Raj',8:'Jyoti',9:'Ashish'}
 
 Q58. What will the output of the following?
 ```
