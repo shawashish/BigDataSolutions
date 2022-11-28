@@ -230,8 +230,11 @@ result = tuple(map(int,input("Enter values for a tuple").split()))
 print(len(result))
 
 Q45. What are sets in Python?
+A45. Sets are used to store multiple items in a single variable. Set is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Tuple, and Dictionary, all with different qualities and usage. A set is a collection which is unordered, unchangeable*, and unindexed.
 
 Q46. How can you create a set?
+A46.
+my_set = {1,2,3,4,5}
 
 Q47. Create a set and add "iNeuron" in your set.
 A47.
@@ -274,41 +277,67 @@ Q58. What will the output of the following?
 var = {}
 print(type(var))
 ```
+A58. <class 'dict'>
 
 Q59. How can we add an element in a dictionary?
+A59. 
+my_dict = {1:'Rahul',2:'Nikita',3:'Suresh',4:'Yash',5:'Rahul',6:'Nikita',7:'Raj',8:'Jyoti',9:'Ashish'}
+my_dict[17]='Golu'
+print(my_dict)
 
 Q60. Create a dictionary and access all the values in that dictionary.
+A60. 
+my_dict = {1:'Rahul',2:'Nikita',3:'Suresh',4:'Yash',5:'Rahul',6:'Nikita',7:'Raj',8:'Jyoti',9:'Ashish'}
+print(my_dict.values())
 
 Q61. Create a nested dictionary and access all the element in the inner dictionary.
+A61.
+my_nested_dict = {1:'Rahul',2:'Nikita',10:{1:'Rahul',2:'Nikita',3:'Suresh'},3:'Suresh',4:'Yash',
+                 5:'Rahul',6:'Nikita',7:'Raj',8:'Jyoti',9:'Ashish'}
+
+print(my_nested_dict[10].values())
 
 Q62. What is the use of get() function?
+A62. get() function is used to retrieve value from the dictionary by providing the key in the get() function.
 
 Q63. What is the use of items() function?
+A63. items() function is used to fetch all the key value pair of a dictionary.
 
 Q64. What is the use of pop() function?
+A64. pop() function is used to remove element from the list.
 
 Q65. What is the use of popitems() function?
+A65. popitem() is used to remove the last key pair value inserted in the dictionary.
 
 Q66. What is the use of keys() function?
+A66. keys() function is used to fetch all the keys of the dictionary.
 
 Q67. What is the use of values() function?
+A67. values() function is used to fetch all the values of the dictionary.
 
 Q68. What are loops in Python?
+A68. Loops are control flow statements in python which are used to repeatedly execute a group of statements based on some condition.
 
 Q69. How many type of loop are there in Python?
+A69. Three types of loops are there in python. While, For and Nested loops.
 
 Q70. What is the difference between for and while loops?
+A70. for loops are iterating through a given list whereas while loop is executed based on a condition, the moment the condition is false the while loop ends.
 
 Q71. What is the use of continue statement?
+A71. continue statement is used to iterate over the next item in the loop.
 
 Q72. What is the use of break statement?
+A72. break statement is used to come out of a loop at any given point.
 
 Q73. What is the use of pass statement?
+A73. Inside a custom function if you wish to add some logic in future then you can use pass statement using which python interpreter won't throw any sytax error even if no code is written inside the custom function.
 
 Q74. What is the use of range() function?
+A74. The range() function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and stops before a specified number.
 
 Q75. How can you loop over a dictionary?
-
+A75. You can loop through a dictionary using .items() inside for loops.
 
 ### Coding problems
 Q76. Write a Python program to find the factorial of a given number.
